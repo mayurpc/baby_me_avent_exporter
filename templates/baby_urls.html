@@ -1,0 +1,12 @@
+$def with (username, url_list)
+
+
+<html>
+	<head>
+		<title>Result</title>
+	</head>
+	<body><h1>Baby Graphs for user $username</h1>
+    $for x in url_list
+        <iframe width="800" height="600" frameborder="0" seamless="seamless" scrolling="no" src="$x/.embed?width=800&height=600"></iframe>
+	</body>
+</html>
